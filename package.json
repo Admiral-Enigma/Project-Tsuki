@@ -1,0 +1,19 @@
+{
+  "name": "project-tsuki",
+  "version": "0.0.1",
+  "description": "A hackable soundboard",
+  "main": "main.js",
+  "scripts": {
+    "test": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DemSquirrel/Project-Tsuki.git"
+  },
+  "author": "Lord_Squirrel",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/DemSquirrel/Project-Tsuki/issues"
+  },
+  "homepage": "https://github.com/DemSquirrel/Project-Tsuki#readme"
+}
