@@ -1,5 +1,7 @@
 # Project-Tsuki
-Hackable soundboard
+<img src="https://github.com/DemSquirrel/Project-Tsuki/blob/master/app/assets/icon.png" height="90">
+
+Hackable soundboard 
 
 # Thanks to:
     http://purecss.io/
