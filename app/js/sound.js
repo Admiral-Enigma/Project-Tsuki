@@ -26,6 +26,7 @@ try {
       createjs.Sound.play(sounds.sounds[i].id);
     };
     document.body.appendChild(button);**/
+    addButton(sounds.sounds[i].id);
     console.log(sounds.sounds[i].path, sounds.sounds[i].id);
     console.log("YES");
   }
