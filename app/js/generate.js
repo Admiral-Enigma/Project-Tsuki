@@ -5,7 +5,7 @@ function addButton(id) {
   button.name = id;
   button.value = id;
   button.innerHTML = id;
-  button.class = "pure-button pure-button-primary";
+  button.setAttribute("class","pure-button pure-button-primary");
   button.onclick = function(){
     createjs.Sound.play(id);
   };
