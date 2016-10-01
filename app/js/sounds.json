@@ -2,7 +2,6 @@
   "sounds":[
     {"id":"Fart", "path":"./sound/Fart-Squeeze-Yer-Knees_Mike-Koenig.mp3"},
     {"id":"TheNoise", "path":"./sound/TheNOOoicse.wav"},
-    {"id":"Air Horn", "path":"./sound/Air Horn Sound Effect.mp3"},
-
+    {"id":"Air Horn", "path":"./sound/Air Horn Sound Effect.mp3"}
   ]
 }
