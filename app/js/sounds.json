@@ -1,7 +1,7 @@
 {
   "sounds":[
     {"id":"TheNoise", "path":"./sound/TheNOOoicse.wav"},
-    {"id":"Fisk", "path":"./sound/TheNOOoicse.wav"}
+    {"id":"Fart", "path":"./sound/Fart-Squeeze-Yer-Knees_Mike-Koenig.mp3"}
 
   ]
 }
