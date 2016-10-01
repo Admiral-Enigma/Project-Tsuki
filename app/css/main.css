@@ -5,3 +5,17 @@
 .button-success {
     background: rgb(28, 184, 65); /* this is a green */
 }
+
+.button-container {
+    width: 100%;
+    background: gray;
+    overflow-y: auto;
+}
+
+.button-container > button {
+    width: 100px;
+    height: 100px;
+    float: left;
+    background: lightgray;
+    margin: 15px;
+}
