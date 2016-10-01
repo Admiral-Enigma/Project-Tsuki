@@ -1,30 +1,34 @@
 var fs = require('fs');
+const {shell} = require('electron')
 var sounds = JSON.parse(fs.readFileSync('./app/js/sounds.json', 'utf8'));
-//var s_Noice = "TheNoise";
-//createjs.Sound.registerSound("./sound/TheNOOoicse.wav",s_Noice);
+
 
 function playSound(Id){
   createjs.Sound.play(Id);
 }
-
-function registerSound(id, path){
-  createjs.Sound.registerSound(path,id);
-}
-console.log(sounds.length);
 try {
-  for(var i = 0; i < 20; i++){
+  for(var i = 0; i < sounds.sounds.length; i++){
     //registerSound(sounds.sounds[i].path, sounds.sounds[i].id);
     createjs.Sound.registerSound(sounds.sounds[i].path, sounds.sounds[i].id);
+
+    //var id = sounds.sounds[i].id;
+    /**var btn = document.createElement('button');
+    btn.innerHTML = sounds.sounds[i].id;
+    btn.class = "pure-button pure-button-primary";
+    btn.onclick = playSound(sounds.sounds[i].id);**/
+
+    /**var button= document.createElement('button');
+    button.type = 'button'
+    button.name = sounds.sounds[i].id;
+    button.value = sounds.sounds[i].id;
+    button.class = "pure-button pure-button-primary";
+    button.onclick = function(){
+      createjs.Sound.play(sounds.sounds[i].id);
+    };
+    document.body.appendChild(button);**/
     console.log(sounds.sounds[i].path, sounds.sounds[i].id);
     console.log("YES");
   }
 } catch (e) {
   console.log(e);
 }
-
-/**try {
-  console.log(sounds.sounds[0].id + sounds.sounds[0].path);
-
-} catch (e) {
-    console.log(e);
-}**/
