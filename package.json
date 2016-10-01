@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "description": "A hackable soundboard",
   "main": "main.js",
-  "private":"true",
+  "private": "true",
   "scripts": {
     "test": "electron ."
   },
@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/DemSquirrel/Project-Tsuki/issues"
   },
-  "homepage": "https://github.com/DemSquirrel/Project-Tsuki#readme"
+  "homepage": "https://github.com/DemSquirrel/Project-Tsuki#readme",
+  "dependencies": {
+    "electron-json-storage": "^2.0.0"
+  }
 }
