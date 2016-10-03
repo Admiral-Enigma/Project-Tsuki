@@ -11,16 +11,3 @@ function addButton(id) {
   };
   document.body.appendChild(button);
 }
-var showing = false;
-// TODO: Change to menu
-function showAddButtonGUI(){
-  if(!showing){
-    //Hvis det LART
-    document.getElementById('mainGui').style.display = 'block';
-    showing = true;
-  }else{
-    //Hvis ikke det LART
-    document.getElementById('mainGui').style.display = 'none';
-    showing = false;
-  }
-}
