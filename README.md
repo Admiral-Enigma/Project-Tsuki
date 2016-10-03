@@ -15,3 +15,5 @@ Hackable soundboard
     http://electron.atom.io/
     http://www.createjs.com/
     https://www.iconfinder.com/
+[![forthebadge](http://forthebadge.com/images/badges/built-with-love.svg)](http://forthebadge.com)
+[![forthebadge](http://forthebadge.com/images/badges/powered-by-electricity.svg)](http://forthebadge.com)
