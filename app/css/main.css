@@ -2,20 +2,15 @@
  margin: 0;
  padding: 0;
 }
-.button-success {
+.tsuki-bg{
+  background-color: #2e2c29;
+}
+.tsuki-success {
     background: rgb(28, 184, 65); /* this is a green */
 }
 
-.button-container {
+.tsuki-button {
     width: 100%;
     background: gray;
     overflow-y: auto;
-}
-
-.button-container > button {
-    width: 100px;
-    height: 100px;
-    float: left;
-    background: lightgray;
-    margin: 15px;
 }

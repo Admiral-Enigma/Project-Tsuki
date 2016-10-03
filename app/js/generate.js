@@ -5,7 +5,7 @@ function addButton(id) {
   button.name = id;
   button.value = id;
   button.innerHTML = id;
-  button.setAttribute("class","pure-button pure-button-primary button-container");
+  button.setAttribute("class","pure-button pure-button-primary tsuki-button");
   button.onclick = function(){
     createjs.Sound.play(id);
   };
