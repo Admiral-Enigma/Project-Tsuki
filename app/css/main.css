@@ -6,11 +6,37 @@
   background-color: #2e2c29;
 }
 .tsuki-success {
-    background: rgb(28, 184, 65); /* this is a green */
+    color: rgb(28, 184, 65); /* this is a green */
 }
 
 .tsuki-button {
     width: 100%;
     background: gray;
     overflow-y: auto;
+}
+
+.tsuki-add-button-gui{
+  background-color: rgb(255, 255, 255);
+  display: none;
+  position: absolute;
+  top: 150px;
+  left: 200px;
+  padding: 50px;
+}
+
+.tsuki-change-button {
+  position: fixed;
+  bottom: 0px;
+  right: 0px;
+  overflow-y: auto;
+  background-color: rgb(28, 184, 65);
+  font-family: inherit;
+  font-size: 100%;
+  padding: 0.5em 1em;
+  color: rgb(255, 255, 255); /* rgba not supported (IE 8) */
+  border: 1px solid #999;  /*IE 6/7/8*/
+  border: none rgba(0, 0, 0, 0);  /*IE9 + everything else*/
+  background-color: rgb(28, 184, 65);
+  text-decoration: none;
+  border-radius: 2px;
 }
