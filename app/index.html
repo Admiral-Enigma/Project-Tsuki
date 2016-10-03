@@ -16,10 +16,24 @@
 
     <script src="./js/sound.js" charset="utf-8"></script>
     <script src="./js/generate.js" charset="utf-8"></script>
+
     <button type="button" name="button" class="tsuki-change-button tsuki-success" onclick="showAddButtonGUI();">Add button</button>
     <div class="tsuki-add-button-gui" id="mainGui">
       <p>Label:</p>
-      <input type="text" name="Label" value="">
+      <input type="text" id="Label" value=" ">
+      <input type="file" id="soundFile"/>​
+      <button type="button" name="button" onclick="addSound();" class="tsuki-ok-button">Add</button>
     </div>
+    <script type="text/javascript">
+      function addSound() {
+        var path = document.getElementById('soundFile').value;
+        var id = document.getElementById('Label').value;
+        path = path.replace(/.*[\/\\]/, '');
+        console.log(path);
+        if(id.length > 0 && path.length > 0){
+          loadSoundToJson(id,'./sound/'+path);
+        }
+      }
+    </script>
   </body>
 </html>

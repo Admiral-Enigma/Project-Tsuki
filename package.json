@@ -22,6 +22,7 @@
   "homepage": "https://github.com/DemSquirrel/Project-Tsuki#readme",
   "dependencies": {
     "electron-json-storage": "^2.0.0",
-    "electron-storage": "^1.0.6"
+    "electron-storage": "^1.0.6",
+    "jsonfile": "^2.4.0"
   }
 }
