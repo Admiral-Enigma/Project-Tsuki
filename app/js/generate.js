@@ -24,3 +24,15 @@ function showAddButtonGUI(){
     showing = false;
   }
 }
+var showingEditor = false;
+function showHackMenu(){
+  if(!showingEditor){
+    //Hvis det LART
+    document.getElementById('editor').style.display = 'block';
+    showingEditor = true;
+  }else{
+    //Hvis ikke det LART
+    document.getElementById('editor').style.display = 'none';
+    showingEditor = false;
+  }
+}
