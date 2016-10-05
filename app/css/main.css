@@ -31,6 +31,14 @@
   left: 200px;
   padding: 50px;
 }
+#tsuki-editor{
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+}
 .tsuki-hack-button {
   position: fixed;
   bottom: 0px;
