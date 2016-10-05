@@ -7,14 +7,13 @@
   </head>
   <body>
     <div id="tsuki-editor">
-      Hello!
     </div>
     <script src="./assets/src-noconflict/ace.js" type="text/javascript" charset="utf-8"></script>
     <script>
       try {
         var editor = ace.edit("tsuki-editor");
-        editor.setTheme("ace/theme/monokai");
-        editor.getSession().setMode("ace/mode/javascript");
+        editor.setTheme("ace/theme/terminal");
+        editor.getSession().setMode("ace/mode/css");
       } catch (e) {
         console.log(e);
       }
