@@ -19,21 +19,17 @@
     <script src="./assets/src-noconflict/ace.js" type="text/javascript" charset="utf-8"></script>
 
     <button type="button" name="button" class="tsuki-change-button tsuki-success" onclick="showAddButtonGUI();">Add button</button>
-    <button type="button" name="button" onclick="showHackMenu();" class="tsuki-change-button tsuki-success">Ahck</button>
+    
+    <script type="text/javascript">
+      require('./js/editorOpen.js')
+    </script>
     <div class="tsuki-add-button-gui" id="mainGui">
       <p>Label:</p>
       <input type="text" id="Label" value=" ">
       <input type="file" id="soundFile"/>​
       <button type="button" name="button" onclick="addSound();" class="tsuki-ok-button">Add</button>
     </div>
-    <div class="tsuki-add-button-gui" id="editor">
-      Hey
-    </div>
-    <script>
-      var editor = ace.edit("editor");
-      editor.setTheme("ace/theme/monokai");
-      editor.getSession().setMode("ace/mode/javascript");
-    </script>
+
     <script type="text/javascript">
       function addSound() {
         var path = document.getElementById('soundFile').value;

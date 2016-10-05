@@ -1,6 +1,7 @@
 var fs = require('fs');
 var jsonfile = require('jsonfile');
 const {shell} = require('electron')
+
 var soundsFile = fs.readFileSync('./app/js/sounds.json', 'utf8');
 var sounds = JSON.parse(soundsFile);
 var json = "./app/js/sounds.json";
