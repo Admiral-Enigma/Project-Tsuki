@@ -6,6 +6,16 @@ function addButton(id) {
   button.value = id;
   button.innerHTML = id;
   button.setAttribute("class","pure-button pure-button-primary tsuki-button");
+  button.oncontextmenu = function(){
+    var del = confirm('Delete '+id+'?');
+    if (del == true) {
+      removeSoundFromJson(id);
+      location.reload();
+      alert('You deleted '+id);
+    } else {
+      console.log('cancel');
+    }
+  };
   button.onclick = function(){
     createjs.Sound.play(id);
   };

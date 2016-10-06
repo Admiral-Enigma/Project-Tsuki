@@ -6,6 +6,7 @@ var soundsFile = fs.readFileSync('./app/js/sounds.json', 'utf8');
 var sounds = JSON.parse(soundsFile);
 var json = "./app/js/sounds.json";
 
+
 function playSound(Id){
   createjs.Sound.play(Id);
 }
@@ -15,6 +16,27 @@ function loadSoundToJson(id, path){
   var soundsJSON = JSON.stringify(sounds);
   fs.writeFileSync(json, soundsJSON);
 }
+
+function removeSoundFromJson(Id) {
+  console.log(Id);
+  try {
+    for (var i = 0; i < sounds.sounds.length; i++) {
+      if(sounds.sounds[i].id == Id){
+        console.log('found it!');
+        sounds.sounds.splice(i, 1)
+        console.log('Stuff');
+        var newSoundsJSON = JSON.stringify(sounds);
+        fs.writeFileSync(json, newSoundsJSON);
+      }
+    }
+  } catch (e) {
+    console.log(e);
+  } finally {
+
+  }
+
+}
+
 jsonfile.readFile(json, function(err, obj) {
   try {
     for(var i = 0; i < obj.sounds.length; i++){
