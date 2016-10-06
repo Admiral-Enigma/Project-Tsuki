@@ -1,6 +1,6 @@
 var fs = require('fs');
 var text = String(fs.readFileSync('./app/css/main.css'));
-
+var saved = true;
 window.onload = function(){
   editor.insert(text);
   editor.resize();
@@ -13,7 +13,8 @@ window.onload = function(){
             if(err) {
                 return console.log(err);
             }
-
+            saved = true;
+            document.getElementById('title').innerHTML = 'Tsuki Customize';
             console.log("The file was saved!");
         });
       },
@@ -22,5 +23,8 @@ window.onload = function(){
 }
 editor.getSession().on('change', function(e) {
     // e.type, etc
-    console.log('Hey');
+    if(saved){
+      saved = false;
+      document.getElementById('title').innerHTML = 'Tsuki Customize NOT SAVED';
+    }
 });

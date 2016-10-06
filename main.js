@@ -32,7 +32,7 @@ function createWindow () {
 app.on('ready', createWindow)
 var editor
 exports.openEditor = function () {
-  editor = new BrowserWindow ({width: 800, height: 600})
+  editor = new BrowserWindow ({width: 800, height: 600, icon: __dirname + '/app/assets/icon.png'})
   editor.loadURL(`file://${__dirname}/app/editor.html`)
 }
 
