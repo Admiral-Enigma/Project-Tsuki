@@ -35,7 +35,7 @@ jspm_packages
 
 # Optional REPL history
 .node_repl_history
-
+Tsuki-win32-x64/
 *.pak
 
 *.pak
