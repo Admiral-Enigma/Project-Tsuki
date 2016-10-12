@@ -1,5 +1,5 @@
 var fs = require('fs');
-var text = String(fs.readFileSync('./css/main.css'));
+var text = String(fs.readFileSync('./app/css/main.css'));
 var saved = true;
 window.onload = function(){
   editor.insert(text);
@@ -9,7 +9,7 @@ window.onload = function(){
       name: 'save',
       bindKey: {win: 'Ctrl-S',  mac: 'Command-S'},
       exec: function(editor) {
-        fs.writeFile("./resources/app/app/css/main.css", editor.getSession().getValue(), function(err) {
+        fs.writeFile("./app/css/main.css", editor.getSession().getValue(), function(err) {
             if(err) {
                 return console.log(err);
             }
