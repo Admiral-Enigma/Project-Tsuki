@@ -1,4 +1,4 @@
-# Project-Tsuki[![Build Status](https://travis-ci.org/DemSquirrel/Project-Tsuki.svg?branch=master)](https://travis-ci.org/DemSquirrel/Project-Tsuki)
+# Project-Tsuki (WARNING LOUD SOUNDS)[![Build Status](https://travis-ci.org/DemSquirrel/Project-Tsuki.svg?branch=master)](https://travis-ci.org/DemSquirrel/Project-Tsuki)
 <img src="https://github.com/DemSquirrel/Project-Tsuki/blob/master/app/assets/icon.png" height="90">
 
 Hackable soundboard
