@@ -9,9 +9,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/DemSquirrel/Project-Tsuki.git"
+    "url": "git+https://github.com/OxCart/Project-Tsuki.git"
   },
-  "author": "Lord_Squirrel",
+  "author": "OxCart",
   "license": "MIT",
   "devDependencies": {
     "electron": "^1.3.4"
