@@ -11,7 +11,7 @@
     "type": "git",
     "url": "git+https://github.com/OxCart/Project-Tsuki.git"
   },
-  "author": "OxCart",
+  "author": "Lord Squirrel",
   "license": "MIT",
   "devDependencies": {
     "electron": "^1.3.4"
