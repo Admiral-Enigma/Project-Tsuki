@@ -39,3 +39,5 @@ jspm_packages
 *.pak
 
 *.pak
+
+node_modules/
